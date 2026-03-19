@@ -11,15 +11,6 @@ export const ContextPage = () => {
       <h1>Context API Пример</h1>
       <CounterProvider>
         <ContextCounter />
-        <div style={{ marginTop: '20px', padding: '15px'}}>
-          <h3>Как это работает:</h3>
-          <ul>
-            <li>Создаем Context с помощью createContext()</li>
-            <li>Оборачиваем компоненты в CounterProvider</li>
-            <li>Используем useCounter() для доступа к данным</li>
-            <li>При изменении count - все компоненты обновляются</li>
-          </ul>
-        </div>
       </CounterProvider>
     </div>
   );

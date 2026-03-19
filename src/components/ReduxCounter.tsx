@@ -9,7 +9,7 @@ export const ReduxCounter = () => {
 
   return (
     <div style={{ border: '2px solid #2196F3', padding: '20px', borderRadius: '8px' }}>
-      <h2>🔵 Redux Toolkit Counter</h2>
+      <h2>Redux Toolkit Counter</h2>
       <h1>{count}</h1>
       <div style={{ gap: '10px', display: 'flex', marginBottom: '10px' }}>
         <button onClick={() => dispatch(decrement())} style={{ padding: '10px 20px' }}>
