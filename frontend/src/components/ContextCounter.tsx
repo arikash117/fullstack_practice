@@ -1,7 +1,7 @@
 import { useCounter } from '../context/CounterContext';
 
 export const ContextCounter = () => {
-  const { count, increment, decrement } = useCounter();
+  const { count, increment, decrement, reset } = useCounter();
 
   return (
     <div style={{ border: '2px solid #4CAF50', padding: '20px', borderRadius: '8px' }}>
@@ -13,6 +13,9 @@ export const ContextCounter = () => {
         </button>
         <button onClick={increment} style={{ padding: '10px 20px' }}>
           + Increment
+        </button>
+        <button onClick={reset}>
+          reset
         </button>
       </div>
       <p style={{ marginTop: '10px', fontSize: '12px', color: '#666' }}>

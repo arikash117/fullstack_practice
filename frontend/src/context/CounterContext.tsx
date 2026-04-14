@@ -4,6 +4,7 @@ interface CounterContextType {
   count: number;
   increment: () => void;
   decrement: () => void;
+  reset: () => void;
 }
 
 const CounterContext = createContext<CounterContextType | undefined>(undefined);
@@ -13,9 +14,10 @@ export const CounterProvider = ({ children }: { children: ReactNode }) => {
 
   const increment = () => setCount(prev => prev + 1);
   const decrement = () => setCount(prev => prev - 1);
+  const reset = () => setCount(0);
 
   return (
-    <CounterContext.Provider value={{ count, increment, decrement }}>
+    <CounterContext.Provider value={{ count, increment, decrement, reset }}>
       {children}
     </CounterContext.Provider>
   );
