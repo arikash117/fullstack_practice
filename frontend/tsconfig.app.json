@@ -15,6 +15,10 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    
+    /* ← ДОБАВИТЬ ЭТО: */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Linting */
     "strict": true,
